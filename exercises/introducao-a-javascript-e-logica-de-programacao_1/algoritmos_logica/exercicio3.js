@@ -1,4 +1,4 @@
-let n = 5;
+let n = 10;
 let str = "*";
 
 if (n > 1) {
