@@ -2,11 +2,9 @@
 
 function maiorValor(arr) {
   let maior = 0;
-  let valor = 0; 
   for (let key in arr) {
-    if (arr[key] > valor) {
+    if (arr[maior] < arr[key]) {
       maior = key;
-      valor = arr[key];
     };
   };
   return maior;
