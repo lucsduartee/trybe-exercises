@@ -18,15 +18,20 @@
 
 function changeText() {
   var texto = document.getElementsByTagName("p")[0];
-
   texto.innerText = "Me vejo estabilizado financeiramente e muito feliz, morando sozinho com dois gatos um chamado Euclides e outro Minkowski.";   
 };
 
 function changeColor() {
   var bg = document.getElementsByClassName("main-content");
   bg[0].style.backgroundColor = "rgb(76,164,109)";
+};
+
+function changeColor2() {
+  var bg = document.getElementsByClassName("center-content");
+  bg[0].style.backgroundColor = "#FFF";
 }
 
 
 changeText();
 changeColor();
+changeColor2();
