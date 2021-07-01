@@ -12,6 +12,14 @@
         Crie uma função que corrija o texto da tag <h1>.
 
         Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-        
+
         Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 */
+
+function changeText() {
+  var texto = document.getElementsByTagName("p")[0];
+
+  texto.innerText = "Me vejo estabilizado financeiramente e muito feliz, morando sozinho com dois gatos um chamado Euclides e outro Minkowski.";   
+}
+
+changeText();
