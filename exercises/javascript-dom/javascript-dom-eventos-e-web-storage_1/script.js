@@ -29,9 +29,14 @@ function changeColor() {
 function changeColor2() {
   var bg = document.getElementsByClassName("center-content");
   bg[0].style.backgroundColor = "#FFF";
-}
+};
 
+function rewritingText() {
+  var txt = document.getElementsByClassName("title");
+  txt[0].innerText = "Exercício 5.1 - JavaScript"; 
+};
 
 changeText();
 changeColor();
 changeColor2();
+rewritingText();
