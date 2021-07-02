@@ -36,7 +36,15 @@ function rewritingText() {
   txt[0].innerText = "Exercício 5.1 - JavaScript"; 
 };
 
+function toUpper() {
+  var toChange = document.querySelectorAll("p");
+  for (let i = 0; i < toChange.length; i += 1) {
+    toChange[i].innerText = toChange[i].innerText.toUpperCase();
+  };
+};
+
 changeText();
 changeColor();
 changeColor2();
 rewritingText();
+toUpper();
