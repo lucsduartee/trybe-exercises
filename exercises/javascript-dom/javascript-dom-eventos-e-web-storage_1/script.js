@@ -43,8 +43,16 @@ function toUpper() {
   };
 };
 
+function showContent() {
+  let toShow = document.querySelectorAll("p");
+  for (let i = 0; i < toShow.length; i += 1) {
+    console.log(toShow[i].innerText)
+  }
+}
+
 changeText();
 changeColor();
 changeColor2();
 rewritingText();
 toUpper();
+showContent();
