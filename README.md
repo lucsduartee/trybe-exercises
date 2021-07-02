@@ -19,9 +19,9 @@ a introdução à conceitos de __Ciências da Computação__. Abaixo seguem os t
 -----------|---------|------------
 :heavy_check_mark:| Bloco 1 | Unix & Bash 
 :heavy_check_mark:| Bloco 2 | Git, GitHub e Internet 
-:o: | Bloco 3 | Introdução à HTML e CSS
-:o: | Bloco 4 | Introdução à JavaScript e Lógica de Programação 
-:o: | Bloco 5 | JavaScript: DOM, Eventos e Web Storage 
+:heavy_check_mark:| Bloco 3 | Introdução à HTML e CSS
+:heavy_check_mark: | Bloco 4 | Introdução à JavaScript e Lógica de Programação 
+:heavy_check_mark:| Bloco 5 | JavaScript: DOM, Eventos e Web Storage 
 :o: | Bloco 6 | HTML e CSS: Forms, Flexbox e Responsivo 
 :o: | Bloco 7 | Introdução à JavaScript ES6 e Testes Unitários 
 :o: | Bloco 8 | Higher Order Functions do JavaScript ES6 
