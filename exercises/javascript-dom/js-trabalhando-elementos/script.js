@@ -66,3 +66,5 @@ let allH3 = document.getElementsByTagName('h3');
 for (let i = 0; i < allH3.length; i += 1) {
   allH3[i].className = 'description';
 }
+
+divMainContent.removeChild(divLeftContent);
