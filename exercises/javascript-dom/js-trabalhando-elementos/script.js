@@ -20,3 +20,7 @@ body.appendChild(divMainContent);
 let divCenterContent = document.createElement('div');
 divCenterContent.className = 'center-content';
 divMainContent.appendChild(divCenterContent);
+
+let pSonOfDCC = document.createElement('p');
+pSonOfDCC.innerText = 'Exercícios sobre manipulção da DOM, criação de elementos, seletores...';
+divCenterContent.appendChild(pSonOfDCC);
