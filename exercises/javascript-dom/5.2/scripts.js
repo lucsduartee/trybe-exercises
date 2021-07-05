@@ -29,3 +29,12 @@ console.log(pai.lastElementChild.previousElementSibling);
 var paiDeEOVE = elementoOndeVoceEsta.parentElement;
 var broDeEOVE = document.createElement('div');
 paiDeEOVE.appendChild(broDeEOVE);
+
+// Crie um filho para elementoOndeVoceEsta.
+elementoOndeVoceEsta.appendChild(document.createElement('div'));
+
+// Crie um filho para primeiroFilhoDoFilho.
+elementoOndeVoceEsta.firstElementChild.appendChild(document.createElement('div'));
+
+// A partir desse filho criado, acesse terceiroFilho
+console.log(elementoOndeVoceEsta.lastElementChild.parentElement.nextElementSibling)
