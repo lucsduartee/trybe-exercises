@@ -24,3 +24,7 @@ divMainContent.appendChild(divCenterContent);
 let pSonOfDCC = document.createElement('p');
 pSonOfDCC.innerText = 'Exercícios sobre manipulção da DOM, criação de elementos, seletores...';
 divCenterContent.appendChild(pSonOfDCC);
+
+let divLeftContent = document.createElement('div');
+divLeftContent.className = 'left-content';
+divMainContent.appendChild(divLeftContent);
