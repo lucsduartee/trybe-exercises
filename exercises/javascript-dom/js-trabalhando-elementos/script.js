@@ -52,3 +52,5 @@ for (let i = 0; i < 3; i += 1) {
   h3SonOfDMC.innerText = `${i}° h3 criado`;
   divMainContent.appendChild(h3SonOfDMC);
 }
+
+h1.className = 'title';
