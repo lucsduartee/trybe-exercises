@@ -24,3 +24,8 @@ console.log(terceiroFilho);
 
 // Agora acesse o terceiroFilho a partir de pai.
 console.log(pai.lastElementChild.previousElementSibling);
+
+// Crie um irmão para elementoOndeVoceEsta.
+var paiDeEOVE = elementoOndeVoceEsta.parentElement;
+var broDeEOVE = document.createElement('div');
+paiDeEOVE.appendChild(broDeEOVE);
