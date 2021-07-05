@@ -16,3 +16,7 @@ body.appendChild(h1);
 let divMainContent = document.createElement('div');
 divMainContent.className = 'main-content';
 body.appendChild(divMainContent);
+
+let divCenterContent = document.createElement('div');
+divCenterContent.className = 'center-content';
+divMainContent.appendChild(divCenterContent);
