@@ -37,4 +37,14 @@ elementoOndeVoceEsta.appendChild(document.createElement('div'));
 elementoOndeVoceEsta.firstElementChild.appendChild(document.createElement('div'));
 
 // A partir desse filho criado, acesse terceiroFilho
-console.log(elementoOndeVoceEsta.lastElementChild.parentElement.nextElementSibling)
+console.log(elementoOndeVoceEsta.lastElementChild.parentElement.nextElementSibling);
+
+// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+var firstSon = pai.firstElementChild;
+pai.removeChild(firstSon);
+var paiDoPai = document.getElementById('paiDoPai');
+elementoOndeVoceEsta.removeChild(elementoOndeVoceEsta.lastElementChild);
+elementoOndeVoceEsta.removeChild(elementoOndeVoceEsta.lastElementChild);
+for (let i = 0; i <= 2; i += 1) {
+  pai.removeChild(pai.lastElementChild);
+}
