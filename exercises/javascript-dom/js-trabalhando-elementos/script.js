@@ -9,6 +9,7 @@
 // Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
 
 let body = document.getElementsByTagName('body')[0];
+
 let h1 = document.createElement('h1');
 h1.innerText = 'Exercício 5.2 - JavaScript DOM';
 body.appendChild(h1);
@@ -28,3 +29,8 @@ divCenterContent.appendChild(pSonOfDCC);
 let divLeftContent = document.createElement('div');
 divLeftContent.className = 'left-content';
 divMainContent.appendChild(divLeftContent);
+
+let divRightContent = document.createElement('div');
+divRightContent.className = 'right-content';
+divMainContent.appendChild(divRightContent);
+
