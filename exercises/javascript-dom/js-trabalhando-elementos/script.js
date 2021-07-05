@@ -42,7 +42,7 @@ divLeftContent.appendChild(imgSonOfDLC);
 let listSonOfDRC = document.createElement('ul');
 for (let i = 0; i < 10; i += 1) {
   let itemListSonOfDRC = document.createElement('li');
-  itemListSonOfDRC.innerText = `${i}`;
+  itemListSonOfDRC.innerText = `${i + 1}`;
   listSonOfDRC.appendChild(itemListSonOfDRC);
 }
 divRightContent.appendChild(listSonOfDRC);
@@ -72,3 +72,7 @@ divMainContent.removeChild(divLeftContent);
 divRightContent.style.marginRight = 'auto';
 
 divCenterContent.style.backgroundColor = '#008000';
+
+for (let i = 0; i < 2; i += 1) {
+  listSonOfDRC.removeChild(listSonOfDRC.lastElementChild);
+}
