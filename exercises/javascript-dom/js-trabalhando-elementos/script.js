@@ -34,3 +34,15 @@ let divRightContent = document.createElement('div');
 divRightContent.className = 'right-content';
 divMainContent.appendChild(divRightContent);
 
+let imgSonOfDLC = document.createElement('img');
+imgSonOfDLC.setAttribute("src", "https://picsum.photos/200");
+imgSonOfDLC.className = 'small-image';
+divLeftContent.appendChild(imgSonOfDLC);
+
+let listSonOfDRC = document.createElement('ul');
+for (let i = 0; i < 10; i += 1) {
+  let itemListSonOfDRC = document.createElement('li');
+  itemListSonOfDRC.innerText = `${i}`;
+  listSonOfDRC.appendChild(itemListSonOfDRC);
+}
+divRightContent.appendChild(listSonOfDRC);
