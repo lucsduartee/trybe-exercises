@@ -70,3 +70,5 @@ for (let i = 0; i < allH3.length; i += 1) {
 divMainContent.removeChild(divLeftContent);
 
 divRightContent.style.marginRight = 'auto';
+
+divCenterContent.style.backgroundColor = '#008000';
