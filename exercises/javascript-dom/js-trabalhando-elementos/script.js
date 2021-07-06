@@ -49,7 +49,7 @@ divRightContent.appendChild(listSonOfDRC);
 
 for (let i = 0; i < 3; i += 1) {
   let h3SonOfDMC = document.createElement('h3');
-  h3SonOfDMC.innerText = `${i}° h3 criado`;
+  h3SonOfDMC.innerText = `${i+1}° h3 criado`;
   divMainContent.appendChild(h3SonOfDMC);
 }
 
