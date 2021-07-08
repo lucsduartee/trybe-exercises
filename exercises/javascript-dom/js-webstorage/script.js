@@ -67,7 +67,6 @@ function carregaEstadoInicial () {
   let lineHeight = localStorage.getItem('lHeight');
   let titleText = document.querySelectorAll('.title');
   let pText = document.querySelectorAll('.texts');
-  let pElements = document.getElementsByTagName('p');
   for(let element of titleText) {
     element.style.fontSize = fontSize;
   }
