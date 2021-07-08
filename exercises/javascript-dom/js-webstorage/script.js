@@ -8,6 +8,7 @@ btnCorFundo.addEventListener('click', corDeFundo);
 btnCorTexto.addEventListener('click', corDoTexto);
 btnFontSize.addEventListener('click', fontSize);
 btnLineHeight.addEventListener('click', lineHeight);
+btnFontFamily.addEventListener('click', fontFamily);
 
 function corDeFundo() {
   let color = `rgb(${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)})`;
@@ -47,6 +48,20 @@ function lineHeight() {
   (count1 >= lineHeight.length -1) ? count1 = 0: count1+=1;
 }
 
+var count2 = 0;
+function fontFamily() {
+  let fontsFamily = [
+    "'Roboto', sans-serif",
+    "'Dancing Script', cursive",
+    "'Yomogi', cursive",
+    "'Zen Loop', cursive",
+    "'Zen Tokyo Zoo', cursive"
+  ];
+  document.body.style.fontFamily = fontsFamily[count2];
+  localStorage.setItem('fFamily', document.body.style.fontFamily);
+  (count2 >= fontsFamily.length -1) ? count2 = 0 : count2 += 1;
+}
+
 function carregaEstadoInicial () {
   let fontSize = localStorage.getItem('fSizes');
   let lineHeight = localStorage.getItem('lHeight');
@@ -65,6 +80,7 @@ function carregaEstadoInicial () {
 window.onload = function () {
   document.body.style.backgroundColor = localStorage.getItem('bgcolor');
   document.body.style.color = localStorage.getItem('txtcolor');
+  document.body.style.fontFamily = localStorage.getItem('fFamily');
   carregaEstadoInicial();
 
 }
