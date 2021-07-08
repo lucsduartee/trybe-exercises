@@ -7,6 +7,7 @@ let btnFontFamily = document.getElementById('btn-font-family');
 btnCorFundo.addEventListener('click', corDeFundo);
 btnCorTexto.addEventListener('click', corDoTexto);
 btnFontSize.addEventListener('click', fontSize);
+btnLineHeight.addEventListener('click', lineHeight);
 
 function corDeFundo() {
   let color = `rgb(${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)})`;
@@ -35,21 +36,35 @@ function fontSize() {
   (count >= fontSize.length - 1) ? count = 0 : count+=1;
 } 
 
-function carregaFontSizes () {
+var count1 = 0;
+function lineHeight() {
+  let lineHeight = ['35px', '45px', '55px', '65px', '75px'];
+  let pElements = document.getElementsByTagName('p');
+  localStorage.setItem('lHeight', lineHeight[count1])
+  for(let element of pElements) {
+    element.style.lineHeight = lineHeight[count1];
+  }
+  (count1 >= lineHeight.length -1) ? count1 = 0: count1+=1;
+}
+
+function carregaEstadoInicial () {
   let fontSize = localStorage.getItem('fSizes');
+  let lineHeight = localStorage.getItem('lHeight');
   let titleText = document.querySelectorAll('.title');
   let pText = document.querySelectorAll('.texts');
+  let pElements = document.getElementsByTagName('p');
   for(let element of titleText) {
     element.style.fontSize = fontSize;
   }
   for(let element of pText) {
     element.style.fontSize = fontSize;
+    element.style.lineHeight = lineHeight;
   }
 }
 
 window.onload = function () {
   document.body.style.backgroundColor = localStorage.getItem('bgcolor');
   document.body.style.color = localStorage.getItem('txtcolor');
-  carregaFontSizes();
+  carregaEstadoInicial();
 
 }
