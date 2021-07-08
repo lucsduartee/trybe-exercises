@@ -1,0 +1,18 @@
+body {
+  margin: 80px 150px;
+}
+
+.title {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
