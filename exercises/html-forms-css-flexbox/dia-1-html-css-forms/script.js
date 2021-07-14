@@ -29,5 +29,15 @@ labelNome.innerHTML = 'Nome';
 fieldset.appendChild(labelNome);
 fieldset.appendChild(inputName);
 
+const inputEmail = document.createElement('input');
+inputEmail.type = 'text';
+inputEmail.id = 'email';
+inputEmail.maxLength = '50';
+const labelEmail = document.createElement('label');
+labelEmail.htmlFor = 'email';
+labelEmail.innerHTML = 'Email';
+fieldset.appendChild(labelEmail);
+fieldset.appendChild(inputEmail);
+
 
 
