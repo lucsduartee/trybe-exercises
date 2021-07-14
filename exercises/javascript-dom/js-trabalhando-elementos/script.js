@@ -8,7 +8,7 @@
 // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
 // Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
 
-let body = document.getElementsByTagName('body')[0];
+let body = document.getElementsByTagName('body')[0]; //document.body
 
 let h1 = document.createElement('h1');
 h1.innerText = 'Exercício 5.2 - JavaScript DOM';
