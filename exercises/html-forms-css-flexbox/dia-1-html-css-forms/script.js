@@ -117,4 +117,21 @@ labelEstado.innerHTML = 'Estado';
 fieldset.appendChild(labelEstado);
 fieldset.appendChild(selectEstado);
 
+const inputTipoCasa = document.createElement('input');
+inputTipoCasa.value = 'casa';
+inputTipoCasa.name = 'tipo-moradia';
+inputTipoCasa.id = 'casa';
+inputTipoCasa.innerHTML = 'Casa';
+inputTipoCasa.type = 'radio';
+const inputTipoApartamento = document.createElement('input');
+inputTipoApartamento.value = 'apartamento';
+inputTipoApartamento.name = 'tipo-moradia';
+inputTipoApartamento.id = 'apartamento';
+inputTipoApartamento.innerText = 'Apartamento';
+inputTipoApartamento.type = 'radio';
+const labelCasa = document.createElement('label');
+labelCasa.innerHTML = 'Tipo Moradia';
+fieldset.appendChild(labelCasa);
+fieldset.appendChild(inputTipoCasa);
+fieldset.appendChild(inputTipoApartamento);
 
