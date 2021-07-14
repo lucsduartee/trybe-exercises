@@ -134,3 +134,7 @@ for (let sigla in objEstados) {
 // fieldset.appendChild(inputTipoCasa);
 // fieldset.appendChild(inputTipoApartamento);
 
+const buttonSubmit = document.getElementById('submit');
+buttonSubmit.addEventListener('click', function(e) {
+  e.preventDefault();
+})
