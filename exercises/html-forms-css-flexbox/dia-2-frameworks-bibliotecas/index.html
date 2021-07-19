@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header class="container-md"><h1 class="display-4 text-muted">Formulário de Currículo</h1></header>
+    <main class="container-md">
+      <form action="" method="GET">
+        <fieldset class="mb-3" >
+          <legend>Dados Pessoais</legend>
+          <label for="nome">Nome</label>
+          <input class="form-control mb-3 " type="text" id="nome" maxlength="40" required name="nome"/>
+          <label for="email">Email</label>
+          <input class="form-control mb-3 " type="email" id="email" maxlength="50" required name="email"/>
+          <label for="telefone">Telefone</label>
+          <input class="form-control mb-3 " type="tel" id="telefone" maxlength="11" required name="telefone"/>
+          <label for="endereco">Endereco</label>
+          <input class="form-control mb-3 " type="text" id="endereco" maxlength="200" required name="endereco"/>
+          <label for="cidade">Cidade</label>
+          <input class="form-control mb-3 " type="text" id="cidade" maxlength="28" required name="cidade"/>
+          <label for="estado">Estado</label>
+          <select class="form-control mb-3" id="estado" name="estado" required></select>
+          <label>Tipo Moradia: </label>
+          <input class="form-check-i mb-3 nput" name="tipo-moradia" id="casa" type="radio" value="casa" required/>Casa
+          <input
+            class=" mb-3 form-check-input"
+            name="tipo-moradia"
+            id="apartamento"
+            type="radio"
+            value="apartamento"
+          />Apartamento
+        </fieldset>
+
+        <fieldset class="mb-3">
+          <legend>Dados Último Emprego</legend>
+          <label for="resumo">Resumo do currículo</label>
+          <textarea class="form-control mb-3" style="resize: none;" name="resumo" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
+          <label for="cargo">Cargo</label>
+          <input class="form-control mb-3 " type="text" name="cargo" id="cargo" required>
+          <label for="descricao">Descrição do Cargo</label>
+          <input class="form-control mb-3 " type="text" name="descricao" id="descricao" required>
+          <label for="data">Data de início</label>
+          <input class="form-control mb-3 " type="date" name="data" id="data" required>
+        </fieldset>
+
+        <button class="btn btn-success" type="submit" id="submit">Enviar</button>
+        <button class="btn btn-danger" type="button" id="clear">Limpar</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
