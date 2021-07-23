@@ -47,8 +47,15 @@ const totalStudants = obj => {
   }
   return soma;
 }
-console.log(totalStudants(allLessons));
 
 /*7-Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. */
+
+const valueOfKey = (obj, index) => {
+  let arrKeys = Object.keys(obj);
+  let key = arrKeys[index];
+  let value = obj[key];
+  return value;
+}
+console.log(valueOfKey(lesson1, 0));
 
 /*8-Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.*/
