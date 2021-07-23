@@ -31,9 +31,11 @@ const listKeys = obj => console.log(Object.keys(obj))
 /*3-Crie uma função para mostrar o tamanho de um objeto.*/
 
 const lenghtObj = obj => console.log(Object.keys(obj).length)
-lenghtObj(lesson2);
 
 /*4-Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.*/
+
+const listValues = obj => console.log(Object.values(obj));
+listValues(lesson3);
 
 /*5-Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3 .*/
 
