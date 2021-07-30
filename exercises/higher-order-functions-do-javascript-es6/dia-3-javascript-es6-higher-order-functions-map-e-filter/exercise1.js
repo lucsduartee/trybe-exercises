@@ -75,8 +75,9 @@ const expectedResult = [
   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
 ];
 
+const criaNome = book => `${book.name} - ${book.genre} - ${book.author.name}`;
 function formatedBookNames() {
-  // escreva seu código aqui
+  return books.map(criaNome);
 }
 
 assert.deepStrictEqual(formatedBookNames(), expectedResult);
