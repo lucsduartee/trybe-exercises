@@ -79,3 +79,4 @@ function authorUnique() {
 }
 
 assert.strictEqual(authorUnique(), expectedResult);
+
