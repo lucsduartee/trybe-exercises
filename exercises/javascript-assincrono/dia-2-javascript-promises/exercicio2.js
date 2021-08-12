@@ -18,6 +18,7 @@ const promise = new Promise((resolve, reject) => {
 const func = () => {
   promise
     .then(sumArr => [2, 3, 5, 10].map(item => sumArr/item))
+    .then(arr => arr.reduce((acc, num) => acc + num))
     .catch(() => console.log('É mais de oito mil! Essa promise deve estar quebrada!'));
 };
-func();
+console.log(func());
