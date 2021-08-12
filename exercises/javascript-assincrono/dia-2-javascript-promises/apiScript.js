@@ -1,7 +1,5 @@
 const API_URL = 'https://icanhazdadjoke.com/';
 
-
-
 const fetchJoke = () => {
   const myObject = {
     method: 'GET',
