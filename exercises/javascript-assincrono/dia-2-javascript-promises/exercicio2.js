@@ -11,13 +11,13 @@ const promise = new Promise((resolve, reject) => {
     return acc + num;
   });
   sumArr < 8000 
-    ? resolve('Promisse resolvida')
-    : reject('Promisse rejeitada');
+    ? resolve(sumArr)
+    : reject();
 });
 
 const func = () => {
   promise
-    .then(msg => console.log(msg))
-    .catch(err => console.log(err));
-}
+    .then(sumArr => [2, 3, 5, 10].map(item => sumArr/item))
+    .catch(() => console.log('Promise rejeitada'));
+};
 func();
