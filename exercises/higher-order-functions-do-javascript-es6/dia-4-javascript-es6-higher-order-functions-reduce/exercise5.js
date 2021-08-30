@@ -15,11 +15,14 @@ const names = [
 //encontrar todas as ocorrẽncias da letra "A" na string.
 //Depos unsando o spreadOperator eu desestruturo a string em um array contendo as letras
 //"A". Com isso posso saber o comprimento do array e adicionar esse valor no acc.
+//referência para a ideia do uso do spreadOp:
+//https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll
 const action = (acc, n4m3) => {
-  //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll
   let arrOfLetter = [...n4m3.toUpperCase().matchAll('A')];
+  console.log(arrOfLetter);
   return acc += arrOfLetter.length;
 }
+
 
 function containsA() {
   return names.reduce(action, 0);
@@ -27,4 +30,4 @@ function containsA() {
 
 assert.deepStrictEqual(containsA(), 20);
 
-/* Lucas Duarte*/
+/* Lucas Duarte */
