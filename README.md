@@ -4,7 +4,7 @@
 
 # Reposítório de Exercícios da Trybe 
 
-Esse repositório foi criado com o intuito de deixar registrado todo progresso relacionado à exercícios práticos
+Esse repositório foi criado com o intuito de deixar registrado todo progresso relacionado a exercícios práticos
 dispostos no ambiente virtual da Trybe. <br />
 
 A pasta `exercises/` possui subpastas, cada qual nomeada segundo o bloco pertencente. Por exemplo, exercícios referente 
