@@ -4,18 +4,21 @@ import './style.css'
 
 class Pokemon extends Component {
   render() {
+    const { pokemon } = this.props;
+    const { name, type, averageWeight:{ value, measurementUnit }, image } = pokemon;
+
     return (
       <div className="pokemon-container">
         <section className="pokemon">
           <div className="pokemon-info">
-            <p>{this.props.pokemon.name}</p>
-            <p>{this.props.pokemon.type}</p>
+            <p>{name}</p>
+            <p>{type}</p>
             <p>
-              Average Weight: {this.props.pokemon.averageWeight.value}{" "}
-              {this.props.pokemon.averageWeight.measurementUnit}
+              Average Weight: {value}{" "}
+              {measurementUnit}
             </p>
           </div>
-          <img className="pokemon-image"src={this.props.pokemon.image} alt="" />
+          <img className="pokemon-image" src={image} alt={`Image of ${name}`} />
         </section>
       </div>
     );
