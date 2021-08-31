@@ -5,7 +5,7 @@ import './style.css'
 class Pokemon extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="pokemon-container">
         <section className="pokemon">
           <div className="pokemon-info">
             <p>{this.props.pokemon.name}</p>
