@@ -1,3 +1,4 @@
+import { Container } from '@material-ui/core';
 import React, { Component } from 'react';
 
 class Infos extends Component {
@@ -15,7 +16,7 @@ class Infos extends Component {
     } = this.props
     
     return (
-      <div>
+      <Container component="div" maxWidth="lg">
         <ul>
           <li>Nome: {name}</li>
           <li>Email: {email}</li>
@@ -27,7 +28,7 @@ class Infos extends Component {
           <li>Cargo: {cargo}</li>
           <li>Descrição do Cargo: {descricaoCargo}</li>
         </ul>
-      </div>
+      </Container>
     );
   }
 }
