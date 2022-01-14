@@ -1,5 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const rescue = require('express-rescue');
+const simpUtils = require('./fs-utils');
 
 const app = express();
 
@@ -25,6 +27,12 @@ app.put('/users/:name/:age', (req, res) => {
   const { name, age } = req.params;
   res.status(200).json({ message: `Seu nome é ${name} e você tem ${age} anos de idade.`});
 });
+
+app.get('/simpsons', rescue(async (req, res) => {
+  const simpsons = await simpUtils.getSimp();
+
+  res.status(200).json(simpsons);
+}));
 
 app.listen(3001, () => {
   console.log('Running on 3001');
