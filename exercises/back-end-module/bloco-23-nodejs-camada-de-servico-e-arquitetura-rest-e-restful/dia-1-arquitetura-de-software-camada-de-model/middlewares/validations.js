@@ -35,6 +35,8 @@ const validateEmail = (req, res, next) => {
       message: 'O campo "email" inválido',
     });
   }
+
+  next();
 }
 
 module.exports = {
