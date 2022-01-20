@@ -8,7 +8,7 @@ const User = require('../model/User');
 
 const router = express.Router();
 
-router.get(
+router.post(
   '/',
   validateName,
   validatePassword,
@@ -19,5 +19,10 @@ router.get(
     res.status(201).json(createdUser);
   }, 
 );
+
+router.get('/', async (_req, res) => {
+  const users = await User.getAll();
+  res.status(201).json(users);
+});
 
 module.exports = router;
